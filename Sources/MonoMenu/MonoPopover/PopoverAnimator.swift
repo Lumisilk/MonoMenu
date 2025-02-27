@@ -41,7 +41,7 @@ final class PopoverAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             toView.transform = CGAffineTransform(scaleX: scale, y: scale)
             containerView.addSubview(toView)
             
-            let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.75)
+            let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.8)
             presentingAnimator = animator
             animator.addAnimations { [toView] in
                 toView.alpha = 1

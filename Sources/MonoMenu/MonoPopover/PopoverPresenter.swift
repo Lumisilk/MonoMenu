@@ -91,8 +91,6 @@ final class PopoverPresenter: UIPresentationController {
     }
     
     @objc private func dismiss() {
-        if monoPopover.canDismissByTappingBackground() {
-            presentingViewController.dismiss(animated: true)
-        }
+        presentingViewController.dismiss(animated: true)
     }
 }

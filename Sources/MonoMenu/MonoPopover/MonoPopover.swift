@@ -19,8 +19,6 @@ public final class MonoPopover: NSObject, MonoMenuProtocol {
     
     public var dimmingBackground: Bool = false
     
-    public var canDismissByTappingBackground: () -> Bool = { true }
-    
     public init(sourceView: UIView) {
         self.sourceView = sourceView
     }
